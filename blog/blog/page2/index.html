@@ -12,8 +12,8 @@
     <!-- Theme Mode-->
     
     <script>
-        const isAutoTheme = false;
-        document.documentElement.setAttribute('data-theme', "light")
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
     </script>
     
 
@@ -62,34 +62,35 @@
     <meta property="og:type" content="website" />
     
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 2 of 2 for Person Themen Projekte | Fabian Lemmes</title>
+<title>Page 2 of 3 for Type on Strap | A website with blog posts and pages</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Person Themen Projekte" />
+<meta property="og:title" content="Type on Strap" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Fabian Lemmes" />
-<meta property="og:description" content="Fabian Lemmes" />
+<meta name="description" content="A website with blog posts and pages" />
+<meta property="og:description" content="A website with blog posts and pages" />
 <link rel="canonical" href="http://localhost:4000/blog/blog/page2/" />
 <meta property="og:url" content="http://localhost:4000/blog/blog/page2/" />
-<meta property="og:site_name" content="Person Themen Projekte" />
+<meta property="og:site_name" content="Type on Strap" />
 <link rel="prev" href="http://localhost:4000/blog/" />
+<link rel="next" href="http://localhost:4000/blog/blog/page3" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Person Themen Projekte" />
+<meta property="twitter:title" content="Type on Strap" />
 <script type="application/ld+json">
-{"@type":"WebPage","description":"Fabian Lemmes","headline":"Person Themen Projekte","url":"http://localhost:4000/blog/blog/page2/","@context":"https://schema.org"}</script>
+{"headline":"Type on Strap","@type":"WebPage","description":"A website with blog posts and pages","url":"http://localhost:4000/blog/blog/page2/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
     <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Person|Themen|Projekte" href="http://localhost:4000/blog/feed.xml"/>
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Person|Themen|Projekte" />
+    <link rel="alternate" type="application/atom+xml" title="Type on Strap" href="http://localhost:4000/blog/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Type on Strap" />
 
     <!-- Twitter Cards -->
-    <meta name="twitter:title" content="Person|Themen|Projekte">
+    <meta name="twitter:title" content="Type on Strap">
     <meta name="twitter:description" content="Change <code>header_text</code> in <code>_config.yml</code>">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="http://localhost:4000/blog/assets/img/header/triangular.jpeg">
-    <meta name="twitter:image:alt" content="Person|Themen|Projekte">
+    <meta name="twitter:image:alt" content="Type on Strap">
 </head>
 
   <body>
@@ -99,11 +100,11 @@
 	<div class="branding">
         
 		<a href="https://fabianlemmes.github.io">
-			<img alt="logo img" class="avatar" src="/blog/assets/img/house.png" />
+			<img alt="logo img" class="avatar" src="/blog/assets/img/triangle.png" />
 		</a>
         
-        <a class="site-title" aria-label="Person|Themen|Projekte" href="/blog/">
-        Blog_latest
+        <a class="site-title" aria-label="Type on Strap" href="https://fabianlemmes.github.io">
+        Type on Strap
 		</a>
 	</div>
 
@@ -161,10 +162,33 @@
             
         
             
+            
+        
+            
+            
+        
+            
+            
+        
+            
             <li class="separator"> | </li>
             <li>
                 <a class="clear" aria-label="Search" title="Search" href="/blog/search/">
                      <i class="fas fa-search" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tags" title="Tags" href="/blog/tags/">
+                     <i class="fas fa-tags" aria-hidden="true"></i>
                     
                 </a>
             </li>
@@ -184,6 +208,9 @@
             
         
         
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title=" " aria-label="" onclick="themeToggle()"></a></li>
         
     </ul>
 
@@ -216,6 +243,71 @@
 
     <div class="posts">
     
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Bootstrap" class="post-link" href="/blog/2017/09/17/Use-Bootstrap.html">
+                Bootstrap
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      September 17, 2017
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     This theme is compatible with Bootstrap if you choose to use it in your pages or posts.
+Here is a little demo with a code snippet, look at the source to see how the HTML and markdown get tangled.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Markdown and HTML" class="post-link" href="/blog/2014/11/28/markdown-and-html.html">
+                Markdown and HTML
+              </a>
+            </h1>
+            
+
+
+<div class="post-info"><a href="https://github.com/rohanchandra" target="_blank" rel="noopener">
+      <img alt="Author's avatar" src="https://avatars2.githubusercontent.com/u/816965?s=460&v=4">
+    
+    <p class="meta">
+      Rohan Chandra - 
+      
+      November 28, 2014
+    </p></a></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.
+
+                  
+              </div>
+          
+      </span>
+    </div>
     
     <div class="post-teaser">
         
@@ -329,39 +421,6 @@ This feature facilitates writing in a structured language such as a programming 
       </span>
     </div>
     
-    <div class="post-teaser">
-        
-        <span>
-          <header>
-            <h1>
-              <a aria-label="Blogging with title 
-" class="post-link" href="/blog/2013/10/18/blogging-with-title.html">
-                Blogging with title 
-
-              </a>
-            </h1>
-            
-
-
-<div class="post-info">
-    <p class="meta">
-      
-      
-      October 18, 2013
-    </p></div>
-
-          </header>
-          
-              <div class="excerpt">
-                  
-                     I am a BIG title
-
-                  
-              </div>
-          
-      </span>
-    </div>
-    
 </div>
 
 
@@ -379,14 +438,14 @@ This feature facilitates writing in a structured language such as a programming 
     </div>
 
     <div class="page_number">
-        2 / 2
+        2 / 3
     </div>
 
     <div class="next">
         
         <!-- next > -->
-        <a aria-label="Next" href=""
-           style="visibility:hidden" class="button">
+        <a aria-label="Next" href="/blog/blog/page3"
+            class="button">
             Next
             <span><i class="fas fa-chevron-right"></i></span>
         </a>
@@ -409,9 +468,7 @@ This feature facilitates writing in a structured language such as a programming 
             <div class="footer-icons">
                 <ul>
                 <!-- Social icons from Font Awesome, if enabled -->
-                <!--
-
-
+                
 <li>
     <a feed.xml href="/blog/feed.xml"
        title="Follow RSS feed"
@@ -423,8 +480,6 @@ This feature facilitates writing in a structured language such as a programming 
     </a>
 </li>
 
-
--->
 
 
     

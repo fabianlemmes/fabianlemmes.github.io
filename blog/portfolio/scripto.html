@@ -12,8 +12,8 @@
     <!-- Theme Mode-->
     
     <script>
-        const isAutoTheme = false;
-        document.documentElement.setAttribute('data-theme', "light")
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
     </script>
     
 
@@ -62,31 +62,31 @@
     <meta property="og:type" content="website" />
     
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>SCRIPTO-Programm (Portfolio-Seite) | Person Themen Projekte</title>
+<title>SCRIPTO-Programm (Portfolio-Seite) | Type on Strap</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="SCRIPTO-Programm (Portfolio-Seite)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Fabian Lemmes" />
-<meta property="og:description" content="Fabian Lemmes" />
+<meta name="description" content="A website with blog posts and pages" />
+<meta property="og:description" content="A website with blog posts and pages" />
 <link rel="canonical" href="http://localhost:4000/blog/portfolio/scripto" />
 <meta property="og:url" content="http://localhost:4000/blog/portfolio/scripto" />
-<meta property="og:site_name" content="Person Themen Projekte" />
+<meta property="og:site_name" content="Type on Strap" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-10-31T18:32:40+01:00" />
+<meta property="article:published_time" content="2022-12-31T14:18:48+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="SCRIPTO-Programm (Portfolio-Seite)" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","description":"Fabian Lemmes","headline":"SCRIPTO-Programm (Portfolio-Seite)","url":"http://localhost:4000/blog/portfolio/scripto","dateModified":"2022-10-31T18:32:40+01:00","datePublished":"2022-10-31T18:32:40+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/portfolio/scripto"},"@context":"https://schema.org"}</script>
+{"headline":"SCRIPTO-Programm (Portfolio-Seite)","dateModified":"2022-12-31T14:18:48+01:00","datePublished":"2022-12-31T14:18:48+01:00","@type":"BlogPosting","description":"A website with blog posts and pages","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/portfolio/scripto"},"url":"http://localhost:4000/blog/portfolio/scripto","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
     <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Person|Themen|Projekte" href="http://localhost:4000/blog/feed.xml"/>
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Person|Themen|Projekte" />
+    <link rel="alternate" type="application/atom+xml" title="Type on Strap" href="http://localhost:4000/blog/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Type on Strap" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="SCRIPTO-Programm (Portfolio-Seite)">
-    <meta name="twitter:description" content="Koordiniert von der FAU Erlangen-Nürnberg bietet SCRIPTO “eine systematische forschungsorientierte Einführung in das Wesen des mittelalterlichen und frühneuz...">
+    <meta name="twitter:description" content="SCRIPTO-Programm">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="http://localhost:4000/blog/assets/img/header/triangular.jpeg">
@@ -100,11 +100,11 @@
 	<div class="branding">
         
 		<a href="https://fabianlemmes.github.io">
-			<img alt="logo img" class="avatar" src="/blog/assets/img/house.png" />
+			<img alt="logo img" class="avatar" src="/blog/assets/img/triangle.png" />
 		</a>
         
-        <a class="site-title" aria-label="Person|Themen|Projekte" href="/blog/">
-        Blog_latest
+        <a class="site-title" aria-label="Type on Strap" href="https://fabianlemmes.github.io">
+        Type on Strap
 		</a>
 	</div>
 
@@ -162,10 +162,33 @@
             
         
             
+            
+        
+            
+            
+        
+            
+            
+        
+            
             <li class="separator"> | </li>
             <li>
                 <a class="clear" aria-label="Search" title="Search" href="/blog/search/">
                      <i class="fas fa-search" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tags" title="Tags" href="/blog/tags/">
+                     <i class="fas fa-tags" aria-hidden="true"></i>
                     
                 </a>
             </li>
@@ -182,6 +205,9 @@
             
         
         
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="SCRIPTO-Programm (Portfolio-Seite) " aria-label="SCRIPTO-Programm (Portfolio-Seite)" onclick="themeToggle()"></a></li>
         
     </ul>
 
@@ -206,19 +232,8 @@
   
 	<!-- ![image](/blog/assets/img/portfolio/scripto-programm.PNG) -->
 
-<p>Koordiniert von der FAU Erlangen-Nürnberg bietet SCRIPTO “eine systematische forschungsorientierte Einführung in das Wesen des mittelalterlichen und frühneuzeitlichen Büchererbes” (aus der Beschreibung des Programms auf der <a href="https://www.mittellatein.phil.fau.de/scripto/" target="_blank">Website</a> der Lateinischen Philologie des Mittelalters und der Neuzeit der FAU). Der Lehrgang, bestehend aus einem Kursus zum nachklassischen Latein, den <em>Horae Bambergenses</em> (Mittellatein an der Universität Bamberg), einem Modul zur mittelalterlichen Buchmalerei (Stadtbibliothek Nürnberg), der Summer School zur abendländischen/lateinischen Schriftkultur (Stiftsbibliothek St. Gallen) sowie einem Kursus zur digitalen Handschriftenkatalogisierung (Herzog August Bibliothek Wolfenbüttel), vermittelt umfassendes Wissen über die Geschichte der europäischen Buchkultur und textuellen Überlieferung ab der Antike.</p>
+<p>SCRIPTO-Programm</p>
 
-<p>2020 mit dem Mittellatein-Kurs im schönen (aber spätwinterlich verregneten) Bamberg gestartet war ich 2022 zunächst im April in Nürnberg, wo uns Christine Jakobi-Mirwald mit den Grundlagen der mittelalterlichen Buchausstattung vertraut gemacht hat.</p>
-
-<p>Über den Kurs in Nürnberg berichte ich in Kürze in einem Blog-Beitrag<!--<a href="">diesem Blog-Beitrag</a>-->.</p>
-
-<p>Unangefochten ein Höhepunkt meiner SCRIPTO-Zeit war dann der Aufenthalt in St. Gallen im Mai 2022. Als Stipendiat der Stiftsbibliothek St. Gallen durfte ich zusammen mit einem internationalen Team von Teilnehmenden fünf spannende Tage lang den Ausführungen Michele Ferraris sowie des Teams der Stiftsbibliothek zur lateinischen Paläographie lauschen, mit den wertvollen (früh-)mittelalterlichen Codices der Stiftsbibliothek arbeiten und den Stiftsbezirk samt barockem Bibliothekssaal und dem Stiftsarchiv mit seinem wertvollen Urkundenbestand erkunden.</p>
-
-<p>Von der Zeit in St. Gallen berichte ich in Kürze in einem weiteren Blog-Beitrag<!--<a href="">diesem Blog-Beitrag</a>--> sowie in <a href="https://fabianlemmes.github.io/blog/st-gallen/"> diesem Bericht</a> (anlässlich des Stipendiums verfasst).</p>
-
-<p>Für 2023 steht nun noch der Wolfenbütteler Kurs zur digitalen Handschriftenkatalogisierung auf dem Programm.</p>
-
-<!-- Neben den kunsthistorischen Grundlagen und der Terminologie zur mittelalterlichen Buchmalerei wurden auch umfassend die Gebrauchskontexte der Überlieferung, allen voran sakraler Buchtypen, thematisiert und die Buchausstattung im Lauf der Jahrhunderte betrachtet und analysiert. In diesem Zusammenhang konnten wir auch mit den wertvollen, größtenteils spätmittelalterlichen Originalen der Stadtbibliothek Nürnberg arbeiten, die Christine Sauer (SB Nürnberg) zur Verfügung stellte und uns sachkundig näherbrachte: Diese haben wir, die Teilnehmenden von SCRIPTO Nürnberg, uns am letzten Tag, quasi als krönenden Abschluss, in einer *Tour d'horizon* gegenseitig vorgestellt. -->
 
   
   </section>
@@ -236,11 +251,11 @@
       
 
       
-        <li><a class="button" href="/blog/themen#Projekte-Portfolio">
+        <li><a class="button" href="/blog/tags#Projekte-Portfolio">
           <p><i class="fas fa-tag fa-fw fa-sm"></i> Projekte-Portfolio</p>
         </a></li>
       
-        <li><a class="button" href="/blog/themen#SCRIPTO">
+        <li><a class="button" href="/blog/tags#SCRIPTO">
           <p><i class="fas fa-tag fa-fw fa-sm"></i> SCRIPTO</p>
         </a></li>
       
@@ -259,9 +274,7 @@
             <div class="footer-icons">
                 <ul>
                 <!-- Social icons from Font Awesome, if enabled -->
-                <!--
-
-
+                
 <li>
     <a feed.xml href="/blog/feed.xml"
        title="Follow RSS feed"
@@ -273,8 +286,6 @@
     </a>
 </li>
 
-
--->
 
 
     

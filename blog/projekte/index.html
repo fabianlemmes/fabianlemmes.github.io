@@ -12,8 +12,8 @@
     <!-- Theme Mode-->
     
     <script>
-        const isAutoTheme = false;
-        document.documentElement.setAttribute('data-theme', "light")
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
     </script>
     
 
@@ -62,25 +62,25 @@
     <meta property="og:type" content="website" />
     
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>03_Projekte | Person Themen Projekte</title>
+<title>03_Projekte | Type on Strap</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="03_Projekte" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Fabian Lemmes" />
-<meta property="og:description" content="Fabian Lemmes" />
+<meta name="description" content="A website with blog posts and pages" />
+<meta property="og:description" content="A website with blog posts and pages" />
 <link rel="canonical" href="http://localhost:4000/blog/projekte/" />
 <meta property="og:url" content="http://localhost:4000/blog/projekte/" />
-<meta property="og:site_name" content="Person Themen Projekte" />
+<meta property="og:site_name" content="Type on Strap" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="03_Projekte" />
 <script type="application/ld+json">
-{"@type":"WebPage","description":"Fabian Lemmes","headline":"03_Projekte","url":"http://localhost:4000/blog/projekte/","@context":"https://schema.org"}</script>
+{"headline":"03_Projekte","@type":"WebPage","description":"A website with blog posts and pages","url":"http://localhost:4000/blog/projekte/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
     <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Person|Themen|Projekte" href="http://localhost:4000/blog/feed.xml"/>
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Person|Themen|Projekte" />
+    <link rel="alternate" type="application/atom+xml" title="Type on Strap" href="http://localhost:4000/blog/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Type on Strap" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="03_Projekte">
@@ -98,11 +98,11 @@
 	<div class="branding">
         
 		<a href="https://fabianlemmes.github.io">
-			<img alt="logo img" class="avatar" src="/blog/assets/img/house.png" />
+			<img alt="logo img" class="avatar" src="/blog/assets/img/triangle.png" />
 		</a>
         
-        <a class="site-title" aria-label="Person|Themen|Projekte" href="/blog/">
-        Blog_latest
+        <a class="site-title" aria-label="Type on Strap" href="https://fabianlemmes.github.io">
+        Type on Strap
 		</a>
 	</div>
 
@@ -160,10 +160,33 @@
             
         
             
+            
+        
+            
+            
+        
+            
+            
+        
+            
             <li class="separator"> | </li>
             <li>
                 <a class="clear" aria-label="Search" title="Search" href="/blog/search/">
                      <i class="fas fa-search" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tags" title="Tags" href="/blog/tags/">
+                     <i class="fas fa-tags" aria-hidden="true"></i>
                     
                 </a>
             </li>
@@ -180,6 +203,9 @@
             
         
         
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="03_Projekte " aria-label="03_Projekte" onclick="themeToggle()"></a></li>
         
     </ul>
 
@@ -230,6 +256,72 @@
     </div>
     
     <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/ninja">
+            <div class="caption" title="Ninja">
+                <div class="caption-content">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/blog/assets/img/portfolio/ninja.png" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/circus">
+            <div class="caption" title="Circus">
+                <div class="caption-content">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/blog/assets/img/portfolio/circus.png" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/hanoi">
+            <div class="caption" title="Tower of Hanoi">
+                <div class="caption-content">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/blog/assets/img/portfolio/toh.png" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/cake">
+            <div class="caption" title="Cake">
+                <div class="caption-content">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/blog/assets/img/portfolio/cake.png" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/jekyllblog">
+            <div class="caption" title="Jekyll">
+                <div class="caption-content">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/blog/assets/img/portfolio/cabin.png" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/gitlecture">
+            <div class="caption" title="Github">
+                <div class="caption-content">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/blog/assets/img/portfolio/github.png" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
         <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/promotion">
             <div class="caption" title="Promotion (Portfolio-Seite)">
                 <div class="caption-content">
@@ -252,6 +344,17 @@
     </div>
     
     <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/safe">
+            <div class="caption" title="Creative">
+                <div class="caption-content">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/blog/assets/img/portfolio/safe.png" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
         <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/scripto">
             <div class="caption" title="SCRIPTO-Programm (Portfolio-Seite)">
                 <div class="caption-content">
@@ -263,13 +366,35 @@
     </div>
     
     <div class="portfolio-cell">
-        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/weiterbildung">
-            <div class="caption" title="Weiterbildung und Vernetzung (Portfolio-Seite)">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/tictactoe">
+            <div class="caption" title="Tic tac toe">
                 <div class="caption-content">
                     <i class="fas fa-search-plus fa-3x"></i>
                 </div>
             </div>
-            <img alt="" class="" src="/blog/assets/img/portfolio/weiterbildung.png" />
+            <img alt="" class="" src="/blog/assets/img/portfolio/ttt.png" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/submarine">
+            <div class="caption" title="Lorem Ipsum">
+                <div class="caption-content">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/blog/assets/img/portfolio/submarine.png" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/blog/portfolio/weiterbildung">
+            <div class="caption" title="Weiterbildung (Portfolio-Seite)">
+                <div class="caption-content">
+                    <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/blog/assets/img/portfolio/weiterbildung.PNG" />
         </a>
     </div>
     
@@ -299,9 +424,7 @@
             <div class="footer-icons">
                 <ul>
                 <!-- Social icons from Font Awesome, if enabled -->
-                <!--
-
-
+                
 <li>
     <a feed.xml href="/blog/feed.xml"
        title="Follow RSS feed"
@@ -313,8 +436,6 @@
     </a>
 </li>
 
-
--->
 
 
     

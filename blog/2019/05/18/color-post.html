@@ -12,8 +12,8 @@
     <!-- Theme Mode-->
     
     <script>
-        const isAutoTheme = false;
-        document.documentElement.setAttribute('data-theme', "light")
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
     </script>
     
 
@@ -62,7 +62,7 @@
     <meta property="og:type" content="website" />
     
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Color Post | Person Themen Projekte</title>
+<title>Color Post | Type on Strap</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Color Post" />
 <meta name="author" content="Sylhare" />
@@ -71,19 +71,19 @@
 <meta property="og:description" content="What a colorful post! This is an idea that came from xukimseven/HardCandy-Jekyll looking at this cheerful and colorful theme, I wanted to enable something similar for Type-on-Strap. You can go fork and star HardCandy-Jekyll too! 😉" />
 <link rel="canonical" href="http://localhost:4000/blog/2019/05/18/color-post.html" />
 <meta property="og:url" content="http://localhost:4000/blog/2019/05/18/color-post.html" />
-<meta property="og:site_name" content="Person Themen Projekte" />
+<meta property="og:site_name" content="Type on Strap" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-05-18T00:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Color Post" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Sylhare"},"@type":"BlogPosting","description":"What a colorful post! This is an idea that came from xukimseven/HardCandy-Jekyll looking at this cheerful and colorful theme, I wanted to enable something similar for Type-on-Strap. You can go fork and star HardCandy-Jekyll too! 😉","headline":"Color Post","url":"http://localhost:4000/blog/2019/05/18/color-post.html","dateModified":"2019-05-18T00:00:00+02:00","datePublished":"2019-05-18T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2019/05/18/color-post.html"},"@context":"https://schema.org"}</script>
+{"headline":"Color Post","dateModified":"2019-05-18T00:00:00+02:00","datePublished":"2019-05-18T00:00:00+02:00","author":{"@type":"Person","name":"Sylhare"},"@type":"BlogPosting","description":"What a colorful post! This is an idea that came from xukimseven/HardCandy-Jekyll looking at this cheerful and colorful theme, I wanted to enable something similar for Type-on-Strap. You can go fork and star HardCandy-Jekyll too! 😉","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2019/05/18/color-post.html"},"url":"http://localhost:4000/blog/2019/05/18/color-post.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
     <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Person|Themen|Projekte" href="http://localhost:4000/blog/feed.xml"/>
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Person|Themen|Projekte" />
+    <link rel="alternate" type="application/atom+xml" title="Type on Strap" href="http://localhost:4000/blog/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Type on Strap" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="Color Post">
@@ -101,11 +101,11 @@
 	<div class="branding">
         
 		<a href="https://fabianlemmes.github.io">
-			<img alt="logo img" class="avatar" src="/blog/assets/img/house.png" />
+			<img alt="logo img" class="avatar" src="/blog/assets/img/triangle.png" />
 		</a>
         
-        <a class="site-title" aria-label="Person|Themen|Projekte" href="/blog/">
-        Blog_latest
+        <a class="site-title" aria-label="Type on Strap" href="https://fabianlemmes.github.io">
+        Type on Strap
 		</a>
 	</div>
 
@@ -163,10 +163,33 @@
             
         
             
+            
+        
+            
+            
+        
+            
+            
+        
+            
             <li class="separator"> | </li>
             <li>
                 <a class="clear" aria-label="Search" title="Search" href="/blog/search/">
                      <i class="fas fa-search" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tags" title="Tags" href="/blog/tags/">
+                     <i class="fas fa-tags" aria-hidden="true"></i>
                     
                 </a>
             </li>
@@ -183,6 +206,9 @@
             
         
         
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="Color Post " aria-label="Color Post" onclick="themeToggle()"></a></li>
         
     </ul>
 
@@ -276,7 +302,7 @@ If you want another one, put it in <code class="language-plaintext highlighter-r
         </li>
          
         <li>
-            <a href="https://www.tumblr.com/share?v=3&u=http://localhost:4000/blog/2019/05/18/color-post.html&quote=Color+Post%20%7C%20Person%7CThemen%7CProjekte&s="
+            <a href="https://www.tumblr.com/share?v=3&u=http://localhost:4000/blog/2019/05/18/color-post.html&quote=Color+Post%20%7C%20Type+on+Strap&s="
                target="_blank" title=" Tumblr">
                 <i class="fab fa-tumblr-square fa-2x" aria-hidden="true"></i>
                 <span class="sr-only">Share on Tumblr</span>
@@ -292,7 +318,7 @@ If you want another one, put it in <code class="language-plaintext highlighter-r
         </li>
           
         <li>
-            <a href="https://www.reddit.com/submit?url=http://localhost:4000/blog/2019/05/18/color-post.html&title=Color+Post%20%7C%20Person%7CThemen%7CProjekte"
+            <a href="https://www.reddit.com/submit?url=http://localhost:4000/blog/2019/05/18/color-post.html&title=Color+Post%20%7C%20Type+on+Strap"
                target="_blank" title=" Reddit">
                 <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
                 <span class="sr-only">Share on Reddit</span>
@@ -300,7 +326,7 @@ If you want another one, put it in <code class="language-plaintext highlighter-r
         </li>
          
         <li>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/blog/2019/05/18/color-post.html&title=Color+Post%20%7C%20Person%7CThemen%7CProjekte&summary=&source=http://localhost:4000/blog/2019/05/18/color-post.html"
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/blog/2019/05/18/color-post.html&title=Color+Post%20%7C%20Type+on+Strap&summary=&source=http://localhost:4000/blog/2019/05/18/color-post.html"
                target="_blank" title=" LinkedIn">
                 <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
                 <span class="sr-only">Share on LinkedIn</span>
@@ -308,7 +334,7 @@ If you want another one, put it in <code class="language-plaintext highlighter-r
         </li>
           
         <li>
-            <a href="mailto:?subject=Color Post%20%7C%20Person|Themen|Projekte&body=http://localhost:4000/blog/2019/05/18/color-post.html"
+            <a href="mailto:?subject=Color Post%20%7C%20Type on Strap&body=http://localhost:4000/blog/2019/05/18/color-post.html"
                target="_blank" title="">
                 <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
                 <span class="sr-only">Email</span></a>
@@ -332,11 +358,11 @@ If you want another one, put it in <code class="language-plaintext highlighter-r
       
 
       
-        <li><a class="button" href="/blog/themen#Color">
+        <li><a class="button" href="/blog/tags#Color">
           <p><i class="fas fa-tag fa-fw fa-sm"></i> Color</p>
         </a></li>
       
-        <li><a class="button" href="/blog/themen#Test">
+        <li><a class="button" href="/blog/tags#Test">
           <p><i class="fas fa-tag fa-fw fa-sm"></i> Test</p>
         </a></li>
       
@@ -419,9 +445,7 @@ If you want another one, put it in <code class="language-plaintext highlighter-r
             <div class="footer-icons">
                 <ul>
                 <!-- Social icons from Font Awesome, if enabled -->
-                <!--
-
-
+                
 <li>
     <a feed.xml href="/blog/feed.xml"
        title="Follow RSS feed"
@@ -433,8 +457,6 @@ If you want another one, put it in <code class="language-plaintext highlighter-r
     </a>
 </li>
 
-
--->
 
 
     

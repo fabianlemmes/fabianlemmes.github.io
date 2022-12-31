@@ -12,8 +12,8 @@
     <!-- Theme Mode-->
     
     <script>
-        const isAutoTheme = false;
-        document.documentElement.setAttribute('data-theme', "light")
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
     </script>
     
 
@@ -62,34 +62,34 @@
     <meta property="og:type" content="website" />
     
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 3 of 3 for Person Themen Projekte | Fabian Lemmes</title>
+<title>Page 3 of 3 for Type on Strap | A website with blog posts and pages</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Person Themen Projekte" />
+<meta property="og:title" content="Type on Strap" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Fabian Lemmes" />
-<meta property="og:description" content="Fabian Lemmes" />
+<meta name="description" content="A website with blog posts and pages" />
+<meta property="og:description" content="A website with blog posts and pages" />
 <link rel="canonical" href="http://localhost:4000/blog/blog/page3/" />
 <meta property="og:url" content="http://localhost:4000/blog/blog/page3/" />
-<meta property="og:site_name" content="Person Themen Projekte" />
+<meta property="og:site_name" content="Type on Strap" />
 <link rel="prev" href="http://localhost:4000/blog/blog/page2" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Person Themen Projekte" />
+<meta property="twitter:title" content="Type on Strap" />
 <script type="application/ld+json">
-{"@type":"WebPage","description":"Fabian Lemmes","headline":"Person Themen Projekte","url":"http://localhost:4000/blog/blog/page3/","@context":"https://schema.org"}</script>
+{"headline":"Type on Strap","@type":"WebPage","description":"A website with blog posts and pages","url":"http://localhost:4000/blog/blog/page3/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
     <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Person|Themen|Projekte" href="http://localhost:4000/blog/feed.xml"/>
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Person|Themen|Projekte" />
+    <link rel="alternate" type="application/atom+xml" title="Type on Strap" href="http://localhost:4000/blog/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="Type on Strap" />
 
     <!-- Twitter Cards -->
-    <meta name="twitter:title" content="Person|Themen|Projekte">
+    <meta name="twitter:title" content="Type on Strap">
     <meta name="twitter:description" content="Change <code>header_text</code> in <code>_config.yml</code>">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="http://localhost:4000/blog/assets/img/header/triangular.jpeg">
-    <meta name="twitter:image:alt" content="Person|Themen|Projekte">
+    <meta name="twitter:image:alt" content="Type on Strap">
 </head>
 
   <body>
@@ -99,11 +99,11 @@
 	<div class="branding">
         
 		<a href="https://fabianlemmes.github.io">
-			<img alt="logo img" class="avatar" src="/blog/assets/img/house.png" />
+			<img alt="logo img" class="avatar" src="/blog/assets/img/triangle.png" />
 		</a>
         
-        <a class="site-title" aria-label="Person|Themen|Projekte" href="/blog/">
-        Blog_latest
+        <a class="site-title" aria-label="Type on Strap" href="https://fabianlemmes.github.io">
+        Type on Strap
 		</a>
 	</div>
 
@@ -161,10 +161,33 @@
             
         
             
+            
+        
+            
+            
+        
+            
+            
+        
+            
             <li class="separator"> | </li>
             <li>
                 <a class="clear" aria-label="Search" title="Search" href="/blog/search/">
                      <i class="fas fa-search" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tags" title="Tags" href="/blog/tags/">
+                     <i class="fas fa-tags" aria-hidden="true"></i>
                     
                 </a>
             </li>
@@ -183,10 +206,10 @@
             
             
         
-            
-            
         
         
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title=" " aria-label="" onclick="themeToggle()"></a></li>
         
     </ul>
 
@@ -305,9 +328,7 @@
             <div class="footer-icons">
                 <ul>
                 <!-- Social icons from Font Awesome, if enabled -->
-                <!--
-
-
+                
 <li>
     <a feed.xml href="/blog/feed.xml"
        title="Follow RSS feed"
@@ -319,8 +340,6 @@
     </a>
 </li>
 
-
--->
 
 
     
