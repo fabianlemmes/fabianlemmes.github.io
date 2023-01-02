@@ -12,8 +12,8 @@
     <!-- Theme Mode-->
     
     <script>
-        const isAutoTheme = true;
-        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+        const isAutoTheme = false;
+        document.documentElement.setAttribute('data-theme', "light")
     </script>
     
 
@@ -76,7 +76,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Blogging with title" />
 <script type="application/ld+json">
-{"headline":"Blogging with title","dateModified":"2013-10-18T00:00:00+02:00","datePublished":"2013-10-18T00:00:00+02:00","@type":"BlogPosting","description":"I am a BIG title","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2013/10/18/blogging-with-title.html"},"url":"http://localhost:4000/blog/2013/10/18/blogging-with-title.html","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","description":"I am a BIG title","headline":"Blogging with title","url":"http://localhost:4000/blog/2013/10/18/blogging-with-title.html","datePublished":"2013-10-18T00:00:00+02:00","dateModified":"2013-10-18T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2013/10/18/blogging-with-title.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -106,7 +106,7 @@
 		</a>
         
         <a class="site-title" aria-label="Blog" href="https://fabianlemmes.github.io">
-        Blog_latest
+        Blog<small> (chronologisch)</small>
 		</a>
 	</div>
 
@@ -123,31 +123,31 @@
         
             
             <li class="separator"> | </li>
-<!--        <li>
+            <li>
                 <a class="clear" aria-label="01_Person" title="01_Person" href="/blog/person/">
                      01_Person 
                 </a>
-            </li> -->
+            </li>
             
             
         
             
             <li class="separator"> | </li>
-<!--        <li>
+            <li>
                 <a class="clear" aria-label="02_Themen" title="02_Themen" href="/blog/themen/">
                      02_Themen 
                 </a>
-            </li> -->
+            </li>
             
             
         
             
             <li class="separator"> | </li>
-<!--        <li>
+            <li>
                 <a class="clear" aria-label="03_Projekte" title="03_Projekte" href="/blog/projekte/">
                      03_Projekte 
                 </a>
-            </li> -->
+            </li>
             
             
         
@@ -174,12 +174,12 @@
         
             
             <li class="separator"> | </li>
-<!--        <li>
+            <li>
                 <a class="clear" aria-label="Search" title="Search" href="/blog/search/">
                      <i class="fas fa-search" aria-hidden="true"></i>
                     
                 </a>
-            </li> -->
+            </li>
             
             
         
@@ -188,12 +188,12 @@
         
             
             <li class="separator"> | </li>
-<!--        <li>
+            <li>
                 <a class="clear" aria-label="Tags" title="Tags" href="/blog/tags/">
                      <i class="fas fa-tags" aria-hidden="true"></i>
                     
                 </a>
-            </li> -->
+            </li>
             
             
         
@@ -207,11 +207,6 @@
             
         
         
-        
-        <li class="separator"> | </li>
-<!--    <li><a id="theme-toggle" title="Blogging with title 
- " aria-label="Blogging with title 
-" onclick="themeToggle()"></a></li> -->
         
     </ul>
 
