@@ -57,7 +57,7 @@
     
 
     <!-- seo tags -->
-    <meta property="og:image" content="http://localhost:4000/blog/">
+    <meta property="og:image" content="http://localhost:4000/blog/assets/img/header/triangular.jpeg">
     
     <meta property="og:type" content="website" />
     
@@ -86,10 +86,10 @@
 
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="Person-Themen-Projekte">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:description" content="<h1>Fabian Lemmes</h1><h2>Person|Themen|Projekte</h2>">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="http://localhost:4000/blog/">
+    <meta name="twitter:image" content="http://localhost:4000/blog/assets/img/header/triangular.jpeg">
     <meta name="twitter:image:alt" content="Person-Themen-Projekte">
 </head>
 
@@ -196,12 +196,23 @@
     <style scoped>
         
         .call-out_img {
-            background-image: url('');
+            background-image: url('/blog/assets/img/header/triangular.jpeg');
+        }
+        
+        @media screen and (max-width: 768px) {
+            .call-out_img {
+                background-image: url('/blog/assets/img/header/triangular-medium.jpeg');
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .call-out_img {
+                background-image: url('/blog/assets/img/header/triangular-small.jpeg');
+            }
         }
         
     </style>
     <div id="main" class="call-out call-out_img">
-        <h1> Change <code>header_text</code> in <code>_config.yml</code> </h1>
+        <h1> <h1>Fabian Lemmes</h1><h2>Person|Themen|Projekte</h2> </h1>
     </div>
 
     <div class="posts">
